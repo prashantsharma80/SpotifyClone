@@ -30,7 +30,7 @@ nav ul li {
     color: white;
     display: flex;
     width: 70%;
-    margin: 23px auto;
+    margin: 24px auto;
     border-radius: 12px;
     padding: 34px;
     background-image: url('images/bg.jpg');
@@ -116,8 +116,28 @@ nav ul li {
     transition: opacity 0.4s ease-in;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 240px) and (max-width: 600px) {
     #masterSongName {
         display: none;
+    }
+
+    .container {
+        padding: 18px;
+    }
+
+    .songList h1 {
+        font-size: 16px;
+    }
+
+    .timestamp {
+        font-size: 13px;
+    }
+
+    .songName {
+        font-size: 13px;
+    }
+
+    .songItemContainer {
+        margin-top: 10px;
     }
 }
